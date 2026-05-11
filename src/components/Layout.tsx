@@ -10,7 +10,7 @@ function Layout({children}: LayoutProps) {
   return (
     <div>
         <Navbar/>
-        <main className="flex-grow">
+        <main className="grow">
             {children}
 
         </main>
