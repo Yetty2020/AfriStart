@@ -1,10 +1,13 @@
+import Layout from "./components/Layout"
+import Hero from "./section/Hero"
 
 
 function App() {
   return (
-    <div>
-      
-    </div>
+   <Layout>
+    <Hero/>
+    
+   </Layout>
   )
 }
 
