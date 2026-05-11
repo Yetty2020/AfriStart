@@ -1,11 +1,8 @@
 
-
-function App() {
+export default function Footer() {
   return (
     <div>
       
     </div>
   )
 }
-
-export default App
