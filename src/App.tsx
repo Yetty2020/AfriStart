@@ -1,6 +1,8 @@
 import Layout from "./components/Layout"
 import Hero from "./section/Hero"
 import Founder from "./section/Founder"
+import Work from "./section/Work"
+import Mission from "./section/Mission"
 
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
    <Layout>
     <Hero/>
     <Founder/>
+    <Mission/>
+    <Work/>
     
    </Layout>
   )
