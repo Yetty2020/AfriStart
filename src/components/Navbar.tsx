@@ -2,6 +2,7 @@ import { useState } from "react";
 import { navlinks } from "./constants/Navigation";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
+import Logo from "./Logo";
 
 function Navbar() {
   const [isopenMenu, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
   return (
     <nav className="w-full flex justify-between ">
       <div>
-        <span>Logo</span>
+        <Logo/>
       </div>
 
       <ul className="hidden lg:flex justify-between items-center gap-10">
@@ -36,7 +37,7 @@ function Navbar() {
         >
           {/* First Item: The Logo */}
           <div className="mb-10">
-            <span className="text-white font-bold">Logo</span>
+            <Logo/>
           </div>
 
           {/* Second Item: The Links */}

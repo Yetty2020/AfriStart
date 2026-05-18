@@ -1,9 +1,9 @@
-import LogoImg from "..assets/Logo.png"
+import LogoImg from "../assets/Logo.png"
 
 const Logo: React.FC = () => {
   return(
     <div>
-      <img src={LogoImg} alt="logo" className="w-10 h-10"/>
+      <img src={LogoImg} alt="logo" className="w-35 h-35"/>
     </div>
   )
 }
