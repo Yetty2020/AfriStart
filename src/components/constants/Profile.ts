@@ -13,7 +13,7 @@ export const ProfileData: Profile[] = [
     {
         name: "Zainab Ajileye",
         role: "Founder and CEO",
-        image: "../assets/ze.jpg",
+        image: profile,
         info: ""
 
 
@@ -21,7 +21,7 @@ export const ProfileData: Profile[] = [
     {
         name: "Team Memeber",
         role: "Web Designer",
-        image: "../assets/ze.jpg",
+        image: profile,
         info: ""
 
 
@@ -29,7 +29,7 @@ export const ProfileData: Profile[] = [
     {
         name: "Team Memeber",
         role: "Social Media Manager",
-        image: "../assets/ze.jpg",
+        image: profile,
         info: ""
 
 
