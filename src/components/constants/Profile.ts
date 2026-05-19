@@ -1,4 +1,4 @@
-import profile from "../assets/ze.jpg"
+import profile from "../../assets/zee.jpeg"
 
 
 export interface Profile {
@@ -9,7 +9,7 @@ export interface Profile {
     info: string;
 }
 
-export const ProfileData: Profile[] = [
+export  const ProfileData: Profile[] = [
     {
         name: "Zainab Ajileye",
         role: "Founder and CEO",
@@ -27,7 +27,7 @@ export const ProfileData: Profile[] = [
 
     },
     {
-        name: "Team Memeber",
+        name: "Team Member",
         role: "Social Media Manager",
         image: profile,
         info: ""
