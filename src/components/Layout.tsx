@@ -8,7 +8,7 @@ interface LayoutProps{
 
 function Layout({children}: LayoutProps) {
   return (
-    <div>
+    <div className="bg-[#1A0F1E]">
         <Navbar/>
         <main className="grow">
             {children}

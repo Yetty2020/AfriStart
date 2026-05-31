@@ -12,15 +12,15 @@ function Navbar() {
     console.log("open");
   };
   return (
-    <nav className="w-full flex justify-between ">
+    <nav className="w-full flex justify-between text-[#FFF1F2] font-Inter text-lg px-3 lg:px-10 font-bold tracking-wider">
       <div>
         <Logo/>
       </div>
 
-      <ul className="hidden lg:flex justify-between items-center gap-10">
+      <ul className="hidden lg:flex justify-between items-center gap-20">
         {navlinks.map((link, index) => {
           return (
-            <li key={index} className="list-none">
+            <li key={index} className="list-none cursor-pointer ">
               <a>{link.title}</a>
             </li>
           );
@@ -28,7 +28,7 @@ function Navbar() {
       </ul>
 
       <div className="flex  lg:hidden">
-        <button onClick={toggleMenu} className="z-50 text-3xl text-black">
+        <button onClick={toggleMenu} className="z-50 text-3xl text-[#FFF1F2]">
           {isopenMenu ? <RiCloseFill /> : <HiMenuAlt3 />}
         </button>
 
@@ -36,7 +36,7 @@ function Navbar() {
           className={`fixed top-0 right-0 w-full h-screen bg-[#2D1B33] z-40 flex flex-col items-center justify-center transition-transform duration-300 ${isopenMenu ? "translate-x-0" : "translate-x-full"}`}
         >
           {/* First Item: The Logo */}
-          <div className="mb-10">
+          <div className="lg:mb-5">
             <Logo/>
           </div>
 

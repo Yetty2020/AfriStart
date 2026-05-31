@@ -1,4 +1,4 @@
-import LogoImg from "../assets/Logo.png"
+import LogoImg from "../assets/whiteLogo.png"
 
 const Logo: React.FC = () => {
   return(
