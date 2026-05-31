@@ -20,7 +20,7 @@ function Navbar() {
       <ul className="hidden lg:flex justify-between items-center gap-20">
         {navlinks.map((link, index) => {
           return (
-            <li key={index} className="list-none cursor-pointer ">
+            <li key={index} className="list-none cursor-pointer uppercase ">
               <a>{link.title}</a>
             </li>
           );
