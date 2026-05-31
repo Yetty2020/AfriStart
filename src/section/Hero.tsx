@@ -3,7 +3,7 @@ import { IoDiamondOutline } from "react-icons/io5";
 function Hero() {
   return (
     <div>
-        <span>Our Story</span>
+        <span className="font-Playfair">Our Story</span>
         <h1>Built by women</h1>
         <h1>Built for founders</h1>
         <span><IoDiamondOutline/></span>
