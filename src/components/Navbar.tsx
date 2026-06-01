@@ -12,7 +12,7 @@ function Navbar() {
     console.log("open");
   };
   return (
-    <nav className="w-full flex justify-between text-[#FFF1F2] font-Inter text-lg px-3 lg:px-10 font-bold tracking-wider">
+    <nav data-cursor data-cursor-scale="2" data-cursor-bg="#FFFF" className="w-full flex justify-between text-[#FFF1F2] font-Inter text-lg px-3 lg:px-10 font-bold tracking-wider">
       <div>
         <Logo/>
       </div>
