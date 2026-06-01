@@ -1,8 +1,13 @@
-
+import zee from "../assets/zee.jpeg"
 
 function Founder() {
   return (
-    <div>
+    <section>
+      <div>
+        <img src={zee} alt="founder-image"/>
+      </div>
+
+      <div >
         <p>The Founder</p>
         <h1>Zainab Ajileye</h1>
         <h1>IP Lawyer & CEO</h1>
@@ -14,6 +19,8 @@ function Founder() {
         </div>
       
     </div>
+    </section>
+
   )
 }
 
