@@ -11,19 +11,19 @@ const CustomCursor = () => {
       gsap.to(cursorRef.current, {
         x: clientX,
         y: clientY,
-        duration: 0.4, // Accelerated slightly for a more responsive premium feel
+        duration: 0.4, 
         ease: "power4.out"
       });
     };
 
-    // 2. Dynamic Hover Interaction (Event Delegation)
+    // Dynamic Hover Interaction 
     const handleMouseOver = (event: MouseEvent) => {
       // Find out if the hovered element or its parent wants a custom cursor effect
       const target = (event.target as HTMLElement).closest("[data-cursor]");
       
       if (target) {
         // Read the colors and scales directly from the element being hovered!
-        const targetBg = target.getAttribute("data-cursor-bg") || "#CCFF00"; // Electric Lime default
+        const targetBg = target.getAttribute("data-cursor-bg") || "#FF6B00"; 
         const targetScale = target.getAttribute("data-cursor-scale") || "4";
 
         gsap.to(cursorRef.current, {
@@ -64,8 +64,8 @@ const CustomCursor = () => {
   return (
     <div
       ref={cursorRef}
-      /* Changed absolute to fixed, added pointer-events-none, mix-blend-difference, and centered the anchor */
-      className="fixed top-0 left-0 h-5 w-5 bg-white rounded-full z-9999 pointer-events-none mix-blend-difference -translate-x-1/2 -translate-y-1/2"
+    
+      className="fixed top-0 left-0 h-4 w-4 bg-white rounded-full z-9999 pointer-events-none mix-blend-difference -translate-x-1/2 -translate-y-1/2"
     />
   );
 };
