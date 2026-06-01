@@ -4,7 +4,7 @@ function Hero() {
   return (
   
         
-    <div className="min-h-screen md:h-screen flex flex-col items-center justify-center bg-[#1A0F1E] gap-6 font-Playfair px-5 " >
+    <div className="min-h-screen md:h-screen flex flex-col items-center justify-center bg-[#1A0F1E] gap-6 font-Playfair lg:px-30 lg:mb-10" >
         <span data-cursor 
         data-cursor-bg="#CCFF00" 
         data-cursor-scale="6" className="flex-start  text-[#FFF1F2]  text-sm tracking-widest font-Inter font-extra-bold">Our Story</span>
