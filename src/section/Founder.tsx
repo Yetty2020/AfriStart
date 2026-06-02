@@ -5,7 +5,7 @@ function Founder() {
     <section  data-cursor
   data-cursor-bg="#FFF1F2"      
   data-cursor-scale="6"         
-  data-cursor-text="The Founder" className="text-white  flex flex-col gap-8 lg:gap-0 w-full border-t border-[#FF6B00] pt-10" >
+  data-cursor-text="The Founder" className="text-white  flex flex-col gap-8 lg:gap-0 w-full border-b border-t border-[#FF6B00] pt-10" >
       <div className="flex flex-col gap-4 border-b border-[#FF6B00] w-full pb-10 px-5 lg:px-30 md:px-15">
         <p className="  text-[#FFF1F2]  text-sm tracking-widest font-Inter font-bold">The Founder</p>
         <h1 className="text-[#FFF1F2] font-black text-5xl md:text-7xl lg:text-8xl">Zainab Ajileye</h1>
