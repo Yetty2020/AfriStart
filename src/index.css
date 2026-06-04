@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-floating: floating 2s ease-in-out infinite;
+
+  /* Formatted correctly for Tailwind v4 engine mapping */
+  --animation-delay-100: 100ms;
+  --animation-delay-200: 2500ms;
+  --animation-delay-300: 5000ms;
+
+  @keyframes floating {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    50% {
+      transform: translate(-50%, -55%); /* Moves card up vertically */
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
