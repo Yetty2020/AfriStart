@@ -1,5 +1,8 @@
 import ProfileCard from "../components/ProfileCard";
 import { ProfileData } from "../components/constants/Profile";
+import gsap from "gsap";
+import {scrollTrigger} from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis"
 
 function Work() {
   return (
