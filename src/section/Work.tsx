@@ -4,41 +4,7 @@ import { ProfileData } from "../components/constants/Profile";
 function Work() {
   return (
     <div className="bg-[#1A0F1E] text-amber-200">
-      <section className="hero relative w-100vw h-100svh overflow-hidden">
-        <div className="hero-cards absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[35%] flex justify-center gap-10">
-          <div className="card hero-card-1 bg-white origin-top-right z-2 flex-1 relative aspect-5/7 rounded-lg flex flex-col space-between">
-            <div className="card-title w-full flex space-between">
-               <span>Plan</span>
-                    <span>01</span>
-            </div>
-            <div className="card-title w-full flex space-between">
-               <span>Plan</span>
-                    <span>01</span>
-            </div>
-          </div>
-          <div className="card hero-card-2 bg-yellow-200z-1 flex-1 relative aspect-5/7 rounded-lg flex flex-col space-between">
-            <div className="card-title w-full flex space-between">
-               <span>Plan</span>
-                    <span>01</span>
-            </div>
-            <div className="card-title w-full flex space-between">
-               <span>Plan</span>
-                    <span>01</span>
-            </div>
-          </div>
-          <div className="card hero-card-3 bg-blue-200 z-0 flex-1 relative aspect-5/7 rounded-lg flex flex-col space-between">
-            <div className="card-title w-full flex space-between">
-               <span>Plan</span>
-                    <span>01</span>
-            </div>
-            <div className="card-title w-full flex space-between">
-               <span>Plan</span>
-                    <span>01</span>
-            </div>
-          </div>
-        </div>
-
-      </section>
+      
 
      <section className="cards relative w-full h-screen overflow-hidden p-6 flex justify-center z-10  text-amber-50">
   <div className="cards-container relative w-[75%] h-full flex justify-center items-center gap-5">
