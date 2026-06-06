@@ -1,10 +1,40 @@
 import ProfileCard from "../components/ProfileCard";
 import { ProfileData } from "../components/constants/Profile";
 import gsap from "gsap";
-import {scrollTrigger} from "gsap/ScrollTrigger";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis"
+import { useEffect } from "react";
 
 function Work() {
+
+  useEffect(() =>{
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+      const lenis = new Lenis()
+      lenis.on("scroll", ScrollTrigger.update)
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000)
+      })
+      gsap.ticker.lagSmoothing(0)
+
+      const smoothStep = (p) => p * p (3 - 2 * p);
+
+      ScrollTrigger.create({
+        trigger: ".services",
+        start:"top top",
+        end: `=+{window.innerHeight * 4}px`,
+        pin: "",
+        pinSpacing: false,
+        onLeave: () =>{
+          const serviceSection = document.querySelector(".services");
+          const servicesRect = serviceSection.getBoundingClientRect();
+          const servicesTop = window.pageYOffset + servicesRect.top;
+        }
+
+      })
+    })
+    
+  })
   return (
     <div className="bg-[#1A0F1E] text-amber-200">
       
