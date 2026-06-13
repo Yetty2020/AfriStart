@@ -1,8 +1,17 @@
-import ValuesData from "../constant/ValuesData"
+import { type ValuesDataType
+ } from "./constants/ValuesData"
 
-function ValuesCard() {
+ interface ValuesCardProps{
+  item: ValuesDataType;
+  index: number;
+ }
+
+function ValuesCard({item, index} : ValuesCardProps) {
   return (
-    <div>
+    <div key={index}>
+      <span>{item.icon}</span>
+      <p>{item.title}</p>
+      <p>{item.description}</p>
       
     </div>
   )
